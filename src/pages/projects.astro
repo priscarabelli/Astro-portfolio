@@ -1,0 +1,142 @@
+---
+import ReactApp from "../../src/images/reactweatherapp.png";
+import Bloom from "../../src/images/bloompage.png"; 
+import WorldClock from "../../src/images/worldclock.png"; 
+import Dictionary from "../../src/images/dictionaryapp.png"; 
+import WeatherApp from "../../src/images/weatherapp.png";
+import Layouts from "../layouts/Layouts.astro"; 
+---
+<Layouts>
+    <div class="container">
+        <h1 class="project-h1"> Projects</h1>
+       <div class="row">
+           <div class="col-sm-6">
+               <img src={ReactApp.src} alt="" class="img-fluid">
+           </div>
+           <div class="col-sm-6">
+               <h3 class="project-h3">React.js Weather App</h3>
+               <p class="project-p">
+                   Used previous weather app and integrated into React.js creating different components using props and react useState.</p>
+               <button class="project-btn">
+                   <a href="https://reactweatherbypri.netlify.app/" target="_blank" class="visit-project">Visit project</a>
+               </button>
+           </div>
+       </div>
+   
+   <div class="row">
+       <div class="col-sm-6">
+           <img src={Bloom.src} alt="" class="img-fluid">
+       </div>
+       <div class="col-sm-6">
+           <h3 class="project-h3">Bloom Project</h3>
+           <p class="project-p">
+               In this project the main obejtive was to show the use of grids, embed links and iframes. </p>
+           <button class="project-btn">
+               <a href="https://letitbloom.netlify.app/" target="_blank" class="visit-project">Visit
+                   project</a>
+           </button>
+       </div>
+   </div>
+   
+   <div class="row"> 
+       <div class="col-sm-6">
+           <img src={WorldClock.src} alt="" class="img-fluid">
+       </div>
+   <div class="col-sm-6">
+       <h3 class="project-h3">World Clock</h3>
+    <p class="project-p">
+       For the World clock project the main obejctive was to show the ability to build a select menu and the integration of Moment.js. Which gives you real time for the selected cities but also can show the time using your current location. </p>
+   <button class="project-btn">
+    <a href="https://worldclockbypri.netlify.app/" target="_blank" class="visit-project">Visit
+       project</a>
+       </button>
+       </div>
+   </div>
+   
+   <div class="row">
+       <div class="col-sm-6">
+           <img src={Dictionary.src} alt="" class="img-fluid">
+       </div>
+       <div class="col-sm-6">
+       <h3 class="project-h3">Dictionary App</h3>
+       <p class="project-p">
+        Used React.js to create this dictionary app. Implemented API for word search and images. Also used a react audio player to to allow users to listen to word pronunciation in the same page.    </p>
+   <button class="project-btn">
+       <a href="https://dictionarybypri.netlify.app/" target="_blank" class="visit-project">Visit
+    project</a>
+       </button>
+       </div>
+   </div>
+   <div class="row">
+       <div class="col-sm-6">
+           <img src={WeatherApp.src} alt="" class="img-fluid">
+       </div>
+       <div class="col-sm-6">
+           <h3 class="project-h3">Weather App</h3>
+           <p class="project-p">
+               This project was designed and built using HTML5, CSS3, JavaScript and live API data.Users can easily search
+               for locations, view current conditions, and access detailed forecasts for the upcoming days.
+               With its user-friendly interface and accurate data, this app is your go-to companion for all your
+               weather-related
+               needs.</p>
+           <button class="project-btn">
+               <a href="https://weatherbypri.netlify.app/" target="_blank" class="visit-project">Visit project</a>
+           </button>
+       </div>
+   </div>
+    </div>
+</Layouts>
+<style>
+    .project-h1  {
+        font-family: var(--heading-font-family);
+            font-size: 80px;
+            padding: 20px;     
+        }
+       
+    .project-h3{
+        font-family: var(--default-font-family);
+        padding-top: 120px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .project-p{
+        font-family: var(--paragraph-font-family);
+        font-size: 18px;
+    }
+    .project-btn{
+      background-color: black;
+      font-size: 20px;
+      font-family: var(--default-font-family);
+     padding: 15px;
+      margin: 10px;
+      box-shadow: 2px 2px 2px gray;
+    }
+    .visit-project{
+     text-decoration: none;
+     color: white;
+    }
+    .visit-project:hover {
+        color: black;
+    }
+    .project-btn:hover {
+        color: black;
+        background-color: white;
+        transition: all 2ms ease-in-out;
+        cursor: pointer;
+    }
+
+    @media (max-width:900px) {
+        .project-h1 {
+            font-size: 80px;
+            padding: 20px;     
+        }
+       
+        .project-h3{
+            padding-top: 20px;
+        }
+        .project-p{
+            padding: 10px;
+        }
+        
+    }
+    </style>

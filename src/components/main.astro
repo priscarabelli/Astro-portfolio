@@ -1,0 +1,48 @@
+---
+import PictureMain from "../../src/images/profiledesign.png"; 
+
+---
+
+<div class="container">
+    <h1 class="name">Priscilla Scarabelli</h1>
+    <img src={PictureMain.src} alt="profile-picture"  class="img-fluid profile-pic" width="400px">
+    <h1 class="portfolio-h1">PORTFOLIO</h1>
+     <h2 class="h2-home">Junior Front-end developer based in the UK</h2>
+</div>
+
+<style>
+.name{
+    font-family: var(--heading-font-family);
+    font-size: 100px;
+    transform: translate(0px, 70px);
+    letter-spacing: 0.1em;
+    text-shadow: 1px 1px 2px white;
+    }
+.portfolio-h1{
+    font-family: var(--default-font-family);
+    font-size: 150px;
+    transform: translate(0px, -80px);
+    text-shadow: 1px 1px 2px white;
+    }
+    .profile-pic{
+        max-width:100%;
+    }
+
+@media (max-width: 900px) {
+    .portfolio-h1{
+          font-size: 60px;  
+        text-align: center;
+        }
+        .name{
+            font-size:60px ; 
+        }   
+        .h2-home{
+         font-size: 20px;  
+         text-align: center; 
+        }
+        .container{
+            padding-top: 60px;
+        }
+    
+}
+</style>

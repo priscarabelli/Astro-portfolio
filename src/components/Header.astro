@@ -1,0 +1,39 @@
+---
+import Logo from "../../src/images/PS.png"; 
+import "../styles/global.css";
+---
+
+<header>
+    <nav class="navbar bg-dark" data-bs-theme="dark">
+        <nav class="navbar fixed-top navbar-expand-sm bg-body-tertiary">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src={Logo.src} alt="logo" width="40px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+        <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="/" title="Pri's Portfolio">Homepage</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/about" title="About Pri">About me</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/projects" title="Pri's projects">Projects</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/contact" title="Pri's contact">Contact</a>
+        </li>
+        </ul>
+        </div>
+        </div>
+       </nav>
+       </nav>
+</header>
+<style>
+    nav{
+    font-family: var(--default-font-family);
+    } 
+</style>

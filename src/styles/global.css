@@ -1,0 +1,36 @@
+:root{
+    --heading-font-family: 'Courgette',
+        cursive;
+    --default-font-family: 'Cinzel',
+        serif;
+    --paragraph-font-family: 'Montserrat', sans-serif;
+    
+    }
+    nav{
+    font-family: var(--default-font-family);}
+   
+    .h2-home{
+    font-family: var(--default-font-family);
+    font-size: 30px;
+    }
+    .container{
+        text-align: center;
+        padding-top: 150px;
+    }
+    .name{
+    font-family: var(--heading-font-family);
+    font-size: 100px;
+    transform: translate(0px, 70px);
+    letter-spacing: 0.1em;
+    text-shadow: 1px 1px 2px white;
+    }
+  .portfolio-h1{
+    font-family: var(--default-font-family);
+    font-size: 150px;
+    transform: translate(0px, -80px);
+    text-shadow: 1px 1px 2px white;
+    }
+    
+
+    
+        
